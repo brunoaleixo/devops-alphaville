@@ -9,7 +9,6 @@ python:
   # - "3.7-dev"
 install:
   - pip install -r requirements_dev.txt
-  
 script:
   - pytest src/test_*.py --cov=handler
   - pycodestyle src/*py --ignore=E501
